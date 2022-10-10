@@ -1,0 +1,63 @@
+/*стилизация базовая*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.07px;
+    color: #1E0606;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.undotted {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*cтилизация хедера*/
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+    margin-bottom: 33px;
+}
+
+.header__list {
+    display: flex;
+    margin-right: auto;
+}
+
+.header__list-item {
+    margin-right: 20px;
+}
+
+.header__contact-found {
+    margin-left: 24px;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+}
+
+
+
