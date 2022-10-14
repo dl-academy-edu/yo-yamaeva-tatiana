@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__contact {
+    display: flex;
+}
+
+.container {
+    align-items: center;
+}
+
+.image {
+    background-image: url('./image/monster.png');
+    position: absolute;
+    height: 461px;
+    left: 555px;
+    top: 142px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 1180px;
+    height: 39px;
+    left: 110px;
+    top: 603px;
+    background: #C29974;
+}
+
+.servises__list {
+    display: flex;
+}
+
+.servises__list-item {
+    display: flex;
+    
+}
+
