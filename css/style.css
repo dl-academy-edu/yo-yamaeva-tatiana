@@ -1,3 +1,5 @@
+/*Стилизация хедера*/
+
 .header {
     display: flex;
     align-items: center;
@@ -5,39 +7,51 @@
 
 .header__list {
     display: flex;
+    margin-right: auto;
+}
+
+.header__list-item {
+    margin-right: 15px;
 }
 
 .header__contact {
     display: flex;
-}
-
-.container {
     align-items: center;
 }
 
-.image {
-    background-image: url('./image/monster.png');
-    position: absolute;
-    height: 461px;
-    left: 555px;
-    top: 142px;
+.header__contact-found {
+    margin-right: 24px;
 }
 
-.rectangle {
-    position: absolute;
+/*Стилизация мэйна*/
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.banner {
     width: 1180px;
-    height: 39px;
-    left: 110px;
-    top: 603px;
-    background: #C29974;
+    height: 372px;
+    top: 231px;
+    background-color: #EEE4DB;
+}
+
+.switches {
+    width: 61px;
+    height: 74px;
+    padding: 248px 1201px 410px 138px ;
+}
+
+.title {
+    position: absolute;
+    width: 307px;
+    height: 88px;
+    padding: 89px 740px 234px 133px;
 }
 
 .servises__list {
     display: flex;
-}
 
-.servises__list-item {
-    display: flex;
-    
 }
 
