@@ -29,20 +29,19 @@
         <main>
             <div class="container">
             <section class="banner">
-            <div class="switches">
-        <img src="./image/numbers.png" class="bunner-numbers" alt="numbers" width="61" height="74">
-            <button>-</button>
-            <button>-</button>
-            <button>-</button>
-            <button>-</button>
+            <div>
+            <button class="btn-active">-</button>
+            <button class="btn">-</button>
+            <button class="btn-one">-</button>
+            <button class="btn-two">-</button>
+            <button class="type"><text class="text">EXPLORE NOW</text></button>
             </div>
                 <div class="title">
-                <h1 class="title title-one">THE OOH NOO COLLECTION </h1>
+                <h1>THE OOH NOO COLLECTION </h1>
                 </div>
                 <div>
-                <h2>Designed in Slovenia</h2>
-              <button type="button" class="btn">EXPLORE NOW</button>
-            </div>
+                <h2 class="title-two">Designed in Slovenia</h2>
+              </div>
             </section>
             <p>FREE (CONTINENTAL) USA SHOPPING ON ALL ORADERS OF $100 USD OR MORE!</p>
                  <section>
@@ -181,35 +180,38 @@
     </div>
 </div>
 </footer>
-<section>
-    <form action="#">
-        <div>
-            <div>
-                <label for="input-name">Name</label>
-                <input type="text" id="input-name">
+<section class="popup">
+    <h2 class="hidden">Popup</h2>
+    <form action="#" class="popup-form">
+            <div class="label-wrapper">
+                <label for="input-name">
+                    <span>Name</span>
+                    <input type="name" id="input-name">
+                </label>
             </div>
+            <div class="fieldself-double">
             <div>
                 <label for="input-phone">Phone</label>
-                <input type="text" id="input-phone">
+                <input type="tel" id="input-phone">
             </div>
             <div>
                 <label for="input-email">Email</label>
                 <input type="text" id="input-email">
             </div>
-        </div>
+            </div>
+            <label for="input-message">Message</label>
+            <textarea id="input-message"></textarea>
             <ul>
                 <li>
                <input type="checkbox" id="input-click">
                <label for="input-click">By clicking on the button, you consent to the processing of your personal data</label>    
                 </li>
             </ul>
-        <div>
-            <label for="textarea">Message</label>
-            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit">SUBMIT</button>
+        <button type="submit" class="">SUBMIT</button>
+        <button class="button" class="popup-close"><img src="./image/cross.svg" alt="cross"></button>
     </form>
 </section>
+<script src="./js/script.js"></script>
 </body>
 </html>
 

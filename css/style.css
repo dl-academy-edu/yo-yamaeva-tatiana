@@ -1,34 +1,4 @@
-/*Стилизация хедера*/
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.header__list {
-    display: flex;
-    margin-right: auto;
-}
-
-.header__list-item {
-    margin-right: 15px;
-}
-
-.header__contact {
-    display: flex;
-    align-items: center;
-}
-
-.header__contact-found {
-    margin-right: 24px;
-}
-
 /*Стилизация мэйна*/
-
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
 
 .banner {
     width: 1180px;
@@ -37,21 +7,96 @@
     background-color: #EEE4DB;
 }
 
-.switches {
-    width: 61px;
-    height: 74px;
-    padding: 248px 1201px 410px 138px ;
+.btn-active {
+    width: 31px;
+    height: 3px;
+    background: rgba(30, 6, 6, 0.6);
+}
+
+.btn {
+    position: relative;
+    width: 31px;
+    height: 3px;
+}
+
+.btn-one {
+    position: relative;
+    width: 31px;
+    height: 3px;
+}
+
+.btn-two {
+    position: relative;
+    width: 31px;
+    height: 3px;
 }
 
 .title {
-    position: absolute;
-    width: 307px;
-    height: 88px;
-    padding: 89px 740px 234px 133px;
+    position: relative;
+   font-family: 'Montserrat';
+   font-style: normal;
+   width: 307px;
+   height: 88px;
+   top: 89px;
+   left: 133px;
+}
+
+.title-two {
+    position: relative;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    top: 197px;
+    left: 133px;
+    color: #1E0606;
+}
+
+.type {
+    position: relative;
+    width: 161px;
+    height: 40px;
+    top: 243px;
+    bottom: 89px;
+    background-color: #000000;
+}
+
+.text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    width: 117px;
+    height: 22px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
 }
 
 .servises__list {
     display: flex;
-
 }
 
+/*popup*/
+
+.popup {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 680px;
+    padding: 50px;
+}
+
+.open {
+    display: block;
+}
+
+.popup-form {
+    width: 680px;
+    padding: 40px;
+}
+
+.fieldself-double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-wrapper{
+    flex-direction: column;
+}
