@@ -1,62 +1,73 @@
 /*Стилизация мэйна*/
 
 .banner {
-    width: 1180px;
-    height: 372px;
-    top: 231px;
+    position: relative;
+    height: 411px;
     background-color: #EEE4DB;
+    display: flex;
+    margin-top: 80px;
 }
 
-.btn-active {
+.handle {
+    display: flex;
+    flex-direction: column;
+}
+
+.handle__swich {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 73px;
+    margin-left: 28px;
+    margin-top: 17px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.swich {
     width: 31px;
     height: 3px;
+    margin-left: 31px;
+    margin-bottom: 11px;
+    background-color: #D6CAC2;
+}
+
+.active {
     background: rgba(30, 6, 6, 0.6);
 }
 
-.btn {
-    position: relative;
-    width: 31px;
-    height: 3px;
+.subtitle {
+    background: #C29974;
+    margin-bottom: 80px;
+    top: 603px;
 }
 
-.btn-one {
-    position: relative;
-    width: 31px;
-    height: 3px;
-}
-
-.btn-two {
-    position: relative;
-    width: 31px;
-    height: 3px;
+.subtitle__text {
+    font-family: Open Sans;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 .title {
-    position: relative;
-   font-family: 'Montserrat';
-   font-style: normal;
-   width: 307px;
-   height: 88px;
-   top: 89px;
-   left: 133px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin-top: 89px;
+    width: 307px;
+    height: 88px;
 }
 
 .title-two {
-    position: relative;
     font-family: 'Crimson Text';
     font-style: italic;
-    top: 197px;
-    left: 133px;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 26px;
     color: #1E0606;
-}
-
-.type {
-    position: relative;
-    width: 161px;
-    height: 40px;
-    top: 243px;
-    bottom: 89px;
-    background-color: #000000;
 }
 
 .text {
@@ -72,10 +83,38 @@
     display: flex;
 }
 
+.monster {
+    position: absolute;
+    top: -50px;
+    left: 445px;
+}
+
+.subject {
+    margin-top: 90px;
+}
+
+.image {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 90px;
+    left: 75px;
+}
+
 /*popup*/
 
 .popup {
-    display: block;
+    display: none;
     position: absolute;
     top: 5%;
     left: 30%;
@@ -98,5 +137,6 @@
 }
 
 .label-wrapper{
+    display: flex;
     flex-direction: column;
 }

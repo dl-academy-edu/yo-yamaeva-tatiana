@@ -1,24 +1,61 @@
 /*стилизация базовая*/
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19.07px;
+    line-height: 20px;
     color: #1E0606;
 }
 
-img {
+.btn {
+    max-width: max-content;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 9px 22px;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.img {
     display: block;
     max-width: 100%;
 }
 
+.subject{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+}
+
+.title__over {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
-    color: #333333;
+    color: #1E0606;
 }
 
 .container {
@@ -32,13 +69,12 @@ a {
     padding: 0;
 }
 
-/*cтилизация хедера*/
+/*Стилизация хедера*/
 
 .header {
     display: flex;
     align-items: center;
-    margin-top: 52px;
-    margin-bottom: 33px;
+    margin-top: 50px;
 }
 
 .header__list {
@@ -47,11 +83,7 @@ a {
 }
 
 .header__list-item {
-    margin-right: 20px;
-}
-
-.header__contact-found {
-    margin-left: 24px;
+    margin-right: 15px;
 }
 
 .header__contact {
@@ -59,5 +91,8 @@ a {
     align-items: center;
 }
 
+.header__contact-found {
+    margin-right: 24px;
+}
 
 
