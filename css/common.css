@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-.body {
+body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -19,6 +19,8 @@
 }
 
 .btn {
+    font-family: 'Open Sans';
+    font-weight: 700;
     max-width: max-content;
     color: #FFFFFF;
     background: #000000;
@@ -27,10 +29,11 @@
     line-height: 22px;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
 }
+
 
 .subject{
     font-family: 'Montserrat';
@@ -41,7 +44,7 @@
     color: #1E0606;
 }
 
-.title__over {
+.title__content {
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
@@ -67,6 +70,12 @@ a {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.footer {
+    display: flex;
+    width: 1400px;
+    height: 555px;
 }
 
 /*Стилизация хедера*/
