@@ -88,9 +88,7 @@
     position: relative;
     margin-top: 30px;
     margin-left: 20px;
-    background: blue;
-    width: 280px;
-    height: 270px;
+    background-color: blue;
 }
 
 .link-title {
@@ -205,7 +203,7 @@
 }
 
 .title__allocator {
-    background-image: url(../image/allocator.svg);
+    background: #E1F0F7;
     width: 326px;
     height: 55px;
     padding-left: 60px;
@@ -214,8 +212,8 @@
 
 .socials {
     display: flex;
-    margin-top: 35px;
-    margin-right: 127px;
+    margin-top: 30px;
+    justify-content: space-between;
 }
 
 .subject__title {
@@ -233,7 +231,7 @@
 }
 
 .content__about {
-    background-image: url(../image/allocator.svg);
+    background-image: url(../image/background.svg);
     width: 543px;
     height: 228px;
     margin-top: 116px;
@@ -252,12 +250,12 @@
 }
 
 .contacts {
-    background-image: url(../image/allocator.svg);
+    background-image: url(../image/background.svg);
     width: 543px;
     height: 209px;
     position: absolute;
     left: 710px;
-    top: 2069px;
+    top: 2060px;
 }
 
 .contact__text {
@@ -271,7 +269,7 @@
     width: 483px;
     height: 196px;
     position: absolute;
-    margin-top: -109px;
+    margin-top: -98px;
     margin-left: 740px;
 }
 
