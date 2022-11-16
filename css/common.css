@@ -72,10 +72,28 @@ a {
     padding: 0;
 }
 
+/*Стилизация футера*/
+
 .footer {
     display: flex;
+    margin-top: 155px;
     width: 1400px;
     height: 555px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-item {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Стилизация хедера*/
