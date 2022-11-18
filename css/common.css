@@ -61,11 +61,6 @@ a {
     color: #1E0606;
 }
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
 .undotted {
     list-style-type: none;
     margin: 0;
@@ -75,25 +70,21 @@ a {
 /*Стилизация футера*/
 
 .footer {
-    display: flex;
+    flex-direction: column;
     margin-top: 155px;
-    width: 1400px;
-    height: 555px;
 }
 
-.nav-item {
-    display: flex;
-    flex-direction: column;
+.navigaton {
+    
 }
 
-.customer-item {
-    display: flex;
-    flex-direction: column;
+.information {
+    
+
 }
 
-.connect-item {
-    display: flex;
-    flex-direction: column;
+.connect {
+
 }
 
 /*Стилизация хедера*/
