@@ -93,12 +93,12 @@ a {
 }
 
 .title__footer-list {
+    font-weight: 400;
     color: #AAAAAA;
 }
 
 .nav-item {
     margin-top: 52px;
-
 }
 
 .customer-item {
@@ -114,8 +114,18 @@ a {
     margin-top: 52px;
 }
 
+.title__footer-list-item {
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
 .footer__list-connect {
     margin-top: 167px;
+}
+
+.title__footer-list-connect {
+    font-weight: 400;
+    color: #A2A2A2;
 }
 
 .connect-item {
@@ -143,7 +153,6 @@ input {
     background: #000000;
     padding: 9px 22px;
     width: 81px;
-    height: 39px;
     margin-left: -5px;
 }
 
