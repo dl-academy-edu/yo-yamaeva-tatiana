@@ -97,22 +97,28 @@ a {
     color: #AAAAAA;
 }
 
-.footer__title {
-    border-bottom: 1px solid #666666;
-    padding: 23px;
-}
-
-.footer__title-bottom {
-    border-top: 1px solid #666666;
-    padding: 23px;
-} 
-
 .nav-item {
-    margin-top: 52px;
+    margin-top: 23px;
 }
 
 .customer-item {
-    margin-top: 52px;
+    margin-top: 23px;
+}
+
+.footer__title {
+    border-top: 1px solid #666666;
+    width: 380px;
+    gap: 20px;
+    padding-top: 28px;
+}
+
+.footer__title-bottom {
+    border-bottom: 1px solid #666666;
+    width: 190px;
+}
+
+.footer__title-connect {
+ 
     
 }
 
@@ -139,7 +145,7 @@ a {
 }
 
 .connect-item {
-    margin-top: 49px;
+    margin-top: 23px;
     margin-bottom: 127px;
 }
 
