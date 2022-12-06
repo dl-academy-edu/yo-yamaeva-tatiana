@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
     <link rel="stylesheet" href="./css/normolize.css">
     <title>Main</title>
 </head>
-
 <body>
     <header class="container header">
         <a href="./index.html">
@@ -133,7 +131,7 @@
         <div class="container footer__wrap title__footer">
             <section class="navigaton">
                 <h5 class="title__footer-list">Navigaton</h5>
-                <ul class="nav-item footer__title footer__title-bottom">
+                <ul class="nav-item footer__title">
                     <li class="footer__list">
                         <a class="title__footer-list-item" href="#">About Us</a>
                     </li>
@@ -153,11 +151,10 @@
                         <a class="title__footer-list-item" href="#">Shop By Designer</a>
                     </li>
                 </ul>
-                <p class="footer__list-item"><a class="title__footer-list-item" href="#">Company Rating</a></p>
             </section>
             <section class="information">
                 <h5 class="title__footer-list">Customer information</h5>
-                <ul class="customer-item footer__title footer__title-bottom">
+                <ul class="customer-item footer__title">
                     <li class="footer__list">
                         <a class="title__footer-list-item" href="./ContactUs.html">Contact Us</a>
                     </li>
@@ -177,14 +174,13 @@
                         <a class="title__footer-list-item" href="#">Search</a>
                     </li>
                 </ul>
-                <p class="footer__list-item title__footer-list-item">Copyright 2018 DLK Design Life Kids</p>
             </section>
             <section class="connect">
                 <h5 class="title__footer-list">Connect</h5>
                 <ul class="connect-item footer__title footer__title-connect">
                     <div>
                         <label for="input-email"></label>
-                        <input type="text" id="input-email" placeholder="Email">
+                        <input class="input__footer" type="text" id="input-email" placeholder="Email">
                         <button class="btn-footer" type="join">Join</button>
                     </div>
                     <ul class="socials-footer">
@@ -194,43 +190,58 @@
                         <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
                     </ul>
                 </ul>
-                <p class="footer__list-connect"><a class="title__footer-list-connect" href="#">Web Design - Direct Line Development</a></p>
                 </section>
         </div>
+            <div class="container footer__inner-wrap">
+                <div class="rating__wrap">
+                <p><a class="footer__list-company rating__title" href="#">Company Rating</a></p>
+                <div class="rating__group">
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1"></label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2"></label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3"></label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4"></label>
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5"></label>
+                </div>
+                <p class="footer__list-item">Copyright 2018 DLK Design Life Kids</p>
+                <p><a class="footer__list-connect" href="#">Web Design - Direct Line Development</a></p>
+            </div>
     </footer>
-    <section class="popup">
-        <h2 class="hidden">Popup</h2>
-        <form action="#" class="popup-form">
-            <div class="label-wrapper">
-                <label for="input-name">
-                    <span>Name</span>
-                    <input type="name" id="input-name">
-                </label>
-            </div>
-            <div class="fieldself-double">
-                <div>
-                    <label for="input-phone">Phone</label>
-                    <input type="tel" id="input-phone">
+    <div class="container">
+        <section class="popup">
+            <h2 class="hidden">Popup</h2>
+            <form action="#" class="popup-form">
+                <div class="label__wrapper">
+                    <label for="input-name">Name</label>
+                    <input class="input-popup" type="name" id="input-name">
                 </div>
-                <div>
-                    <label for="input-email">Email</label>
-                    <input type="text" id="input-email">
+                <div class="fieldself-double">
+                    <div class="fieldself-phone">
+                        <label for="input-phone">Phone</label>
+                        <input class="input-popup-double" type="tel" id="input-phone">
+                    </div>
+                    <div class="fieldself-email">
+                        <label for="input-email">Email</label>
+                        <input class="input-popup-double" type="text" id="input-email">
+                    </div>
                 </div>
-            </div>
-            <label for="input-message">Message</label>
-            <textarea id="input-message"></textarea>
-            <ul>
-                <li>
-                    <input type="checkbox" id="input-click">
-                    <label for="input-click">By clicking on the button, you consent to the processing of your personal
-                        data</label>
-                </li>
-            </ul>
-            <button type="submit" class="">SUBMIT</button>
-            <button class="button" class="popup-close"><img src="./image/cross.svg" alt="cross"></button>
-        </form>
-    </section>
+                <div class="field-inner__wrap">
+                    <label for="input-message">Message</label>
+                    <textarea class="input-message" id="input-message"></textarea>
+                </div>
+                <div class="popup__text">
+                <input class="popup__checkbox" type="checkbox" id="input-click">
+                <label class="popup-click" for="input-click">By clicking on the button, you consent to the processing of your personal data</label>
+                </div>
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="popup-close"><img src="./icon/cross.svg" width="15" height="15" alt="cross"></button>
+            </form>
+        </section>
+    </div>
     <script src="./js/script.js"></script>
 </body>
-
 </html>

@@ -80,10 +80,6 @@
     left: 445px;
 }
 
-.subject {
-    margin-top: 90px;
-}
-
 .image {
     position: relative;
     margin-top: 23px;
@@ -138,8 +134,6 @@
 
 .control {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 90px;
 }
 
 .control-arrow {
@@ -156,13 +150,18 @@
     height: 44px;
 }
 
+.delivery__content {
+    margin-top: 90px;
+}
+
+.picture {
+   margin-top: -500px;
+}
+
 .content {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1206px;
     margin-left: 600px;
-    margin-right: 540px;
+    flex-direction: column;
+    
 }
 
 .title__over{
@@ -216,89 +215,197 @@
     justify-content: space-between;
 }
 
-.subject__title {
-    position: absolute;
-    margin-top: -20px;
+.about__text {
+    display: flex;
+    margin-top: 90px;
+}
+
+.design {
+    background: #E1F0F7;
+}
+
+.headline__title {
+    margin: -20px;
     margin-left: 30px;
 }
 
 .title__desc {
     width: 483px;
-    height: 67px;
-    position: absolute;
     margin-left: 30px;
-    margin-top: -149px;
 }
 
 .content__about {
-    background-image: url(../image/background.svg);
     width: 543px;
-    height: 228px;
-    margin-top: 116px;
 }
 
 .title__about {
-    position: absolute;
+    margin-top: 31px;
     margin-left: 30px;
-    margin-top: -204px;
 }
 
 .button__click {
-    position: absolute;
     margin-left: 30px;
-    margin-top: -63px;
+    margin-bottom: 27px;
 }
 
 .contacts {
-    background-image: url(../image/background.svg);
     width: 543px;
-    height: 209px;
-    position: absolute;
-    left: 710px;
-    top: 2060px;
+    margin-left: 57px;
+    background: #E1F0F7;
 }
 
 .contact__text {
     width: 483px; 
-    height: 66px; 
-    position: absolute;
     padding: 30px;
 }
 
 .map-widget {
     width: 483px;
     height: 196px;
-    position: absolute;
-    margin-top: -98px;
-    margin-left: 740px;
+    margin-top: -96px;
+    margin-left: 620px;
 }
+
+.rating__wrap {
+    border: none;
+    padding: 0;
+    width: 18px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.rating__group {
+    position: absolute;
+    left: 150px;
+    background-image: url('../icon/star.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 16px;
+}
+
+.rating__wrap {
+    border: none;
+    display: flex;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.rating__input:before {
+    appearance: none;
+    background-size: 17px 16px;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.rating__input {
+    background-image: url('../icon/star.svg');
+}
+
+.rating__input:checked {
+    background-image: url('../icon/star__checked.svg');
+}
+
+.rating__input:hover {
+    background-image: url('../icon/star__hover.svg');
+    background: #C29974;
+}
+
 
 /*popup*/
 
 .popup {
-    display: none;
     position: absolute;
-    top: 5%;
-    left: 30%;
-    width: 680px;
-    padding: 50px;
+    top: 113px;
+    left: 360px;
+    z-index: 99;
 }
 
-.open {
-    display: block;
+.hidden {
+    display: none;
 }
 
 .popup-form {
     width: 680px;
-    padding: 40px;
+    height: 542px;
+    padding: 50px;
+    background: #E5EAF8;
+}
+
+.label__wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .fieldself-double {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.label-wrapper{
+.fieldself-phone {
     display: flex;
     flex-direction: column;
+}
+
+.fieldself-email {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.field-inner__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-message {
+    width: 600px;
+    height: 150px;
+} 
+
+.popup__text {
+    margin-top: 20px;
+}
+
+.popup__checkbox {
+    width: 15px;
+    height: 15px;
+    background: #C29974;
+}
+
+.popup-click {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 15px;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-popup {
+    width: 600px;
+    height: 50px;
+}
+
+.input-popup-double {
+    width: 290px;
+    height: 50px;
+}
+
+textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.popup-close {
+    position: absolute;
+    top: 1px;
+    left: 658px;
+    border: none;
+    background: none;
 }
