@@ -266,61 +266,15 @@
     margin-left: 620px;
 }
 
-.rating__wrap {
-    border: none;
-    padding: 0;
-    width: 18px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.rating__group {
-    position: absolute;
-    left: 150px;
-    background-image: url('../icon/star.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 16px;
-}
-
-.rating__wrap {
-    border: none;
-    display: flex;
-    margin-right: 25px;
-    padding: 0;
-}
-
-.rating__input:before {
-    appearance: none;
-    background-size: 17px 16px;
-    background-repeat: no-repeat;
-    margin-top: 2px;
-    cursor: pointer;
-}
-
-.rating__input {
-    background-image: url('../icon/star.svg');
-}
-
-.rating__input:checked {
-    background-image: url('../icon/star__checked.svg');
-}
-
-.rating__input:hover {
-    background-image: url('../icon/star__hover.svg');
-    background: #C29974;
-}
-
 
 /*popup*/
 
-.popup {
+.popup { 
     position: absolute;
-    top: 113px;
+    width: 680px;
+    height: 542px;
     left: 360px;
-    z-index: 99;
+    top: 113px;
 }
 
 .hidden {
@@ -374,7 +328,7 @@
 .popup__checkbox {
     width: 15px;
     height: 15px;
-    background: #C29974;
+    background-image: url('../icon/checkbox.svg');
 }
 
 .popup-click {
