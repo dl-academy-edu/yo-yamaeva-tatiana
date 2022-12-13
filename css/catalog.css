@@ -8,10 +8,6 @@
     line-height: 49px;
 }
 
-.subject {
-    margin-top: 60px;
-}
-
 .breadcrumbs {
     display: flex;
     gap: 20px;
@@ -102,10 +98,13 @@ opacity: 0.5;
     color: #FFFFFF;
 }
 
-.subject {
+.heading {
+    text-align: center;
+}
+
+.heading__title {
     margin-top: 55px;
     margin-bottom: 25px;
-    text-align: center;
 }
 
 .title__over {
@@ -117,8 +116,8 @@ opacity: 0.5;
     width: 680px;
     height: 44px;
     display: flex;
-    text-align: center;
     margin-top: 15px;
+    margin-left: 20%;
 }
 
 .title__over-one {
@@ -130,6 +129,6 @@ opacity: 0.5;
     width: 680px;
     height: 66px;
     display: flex;
-    text-align: center;
     margin-top: 15px;
+    margin-left: 20%;
 }

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/normolize.css">
@@ -14,13 +17,13 @@
         <img src="./icon/logo.svg" alt="logo" width="100" height="52">
         </a>
         <ul  class="header__list">
-            <li class="header__list-item"><a href="./blog.html">Blog</a></li>
-            <li class="header__list-item"><a href="./catalog.html">Catalog</a></li>
-            <li class="header__list-item"><a href="#">About us</a></li>
+            <li class="header__list-item"><a href="./blog.html">BLOG</a></li>
+            <li class="header__list-item"><a href="./catalog.html">CATALOG</a></li>
+            <li class="header__list-item"><a href="#">ABOUT US</a></li>
         </ul>
         <ul class="header__contact">
         <img src="./icon/search.svg" class="header__contact-found" alt="loupe" width="17" height="17">
-            <li class="header__contact"><a href="./ContactUs.html">Contact Us</a></li>
+            <li class="header__contact contact"><a href="./ContactUs.html">CONTACT US</a></li>
         </ul>
         </header>
         <main>
@@ -79,74 +82,74 @@
             </button>
         </div>
     </main>
-    <footer>
-        <section>
-            <p>Navigaton</p>
-         <ul>
-            <li>
-            <a href="#">About Us</a>
-            </li>
-            <li>
-            <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-            <a href="#">Design Servises</a>
-            </li>
-            <li>
-            <a href="#">Featured On</a>
-            </li>
-            <li>
-            <a href="#">2018 Holiday Catalog</a>
-            </li>
-            <li>
-            <a href="#">Shop By Designer</a>
-            </li>
-            <li>
-            <a href="#">Company Rating</a>
-            </li>
-         </ul>   
-        </section>
-        <section>
-        <p>Customer information</p>
-            <ul>
-                    <li>
-                    <a href="./ContactUs.html">Contact Us</a>
+    <footer class="footer background">
+        <div class="container footer__wrap title__footer">
+            <section class="navigaton">
+                <h5 class="title__footer-list">Navigaton</h5>
+                <ul class="nav-item">
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">About Us</a>
                     </li>
-                    <li>
-                    <a href="#">Sale Exclusions</a>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="./blog.html">Blog</a>
                     </li>
-                    <li>
-                    <a href="#">Shopping&Returns</a>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Design Servises</a>
                     </li>
-                    <li>
-                    <a href="#">Terms&Conditions</a>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Featured On</a>
                     </li>
-                    <li>
-                    <a href="#">Privacy Policy</a>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">2018 Holiday Catalog</a>
                     </li>
-                    <li>
-                    <a href="#">Search</a>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Shop By Designer</a>
                     </li>
-            </ul>
-            <p>Copyright   2018 Dlc Design Life Kids</p>
-        </section>
-        <section>
-        <diV>
-            <p> Connect</p> 
-            <div>
-                <label for="input-email">Email</label>
-                <input type="text" id="input-email">
-            </div>
-            <button type="join">Join</button>
-            <ul>
-           <li><a href="#"><img src ="./icon/facebook.svg" alt="facebook"></a></li>
-           <li><a href="#"><img src ="./icon/twitter.svg" alt="twitter"></li>
-           <li><a href="#"><img src ="./icon/pinterest.svg" alt="pinterest"></li>
-           <li><a href="#"><img src ="./icon/Instagram.svg" alt="instagram"></li>
-            </ul>
-            <p>Web Design - Direct Line Development</p>
-        </section>
-    </div>
-</footer>
+                </ul>
+                <p class="footer__list-item"><a class="title__footer-list-item" href="#">Company Rating</a></p>
+            </section>
+            <section class="information">
+                <h5 class="title__footer-list">Customer information</h5>
+                <ul class="customer-item">
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="./ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Sale Exclusions</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Shopping&Returns</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Terms&Conditions</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="title__footer-list-item" href="#">Search</a>
+                    </li>
+                </ul>
+                <p class="footer__list-item title__footer-list-item">Copyright 2018 DLK Design Life Kids</p>
+            </section>
+            <section class="connect">
+                <h5 class="title__footer-list">Connect</h5>
+                <ul class="connect-item">
+                    <div>
+                        <label for="input-email"></label>
+                        <input type="text" id="input-email" placeholder="Email">
+                        <button class="btn-footer" type="join">Join</button>
+                    </div>
+                    <ul class="socials-footer">
+                        <li><a href="#"><img src="./icon/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./icon/twitter.svg" alt="twitter"></li>
+                        <li><a href="#"><img src="./icon/pinterest.svg" alt="pinterest"></li>
+                        <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
+                    </ul>
+                </ul>
+                <p class="footer__list-connect"><a class="title__footer-list-connect" href="#">Web Design - Direct Line Development</a></p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
