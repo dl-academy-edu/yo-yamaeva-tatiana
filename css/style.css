@@ -6,6 +6,7 @@
     background-color: #EEE4DB;
     display: flex;
     margin-top: 80px;
+    z-index: 2;
 }
 
 .handle {
@@ -271,10 +272,14 @@
 
 .popup { 
     position: absolute;
-    width: 680px;
-    height: 542px;
     left: 360px;
     top: 113px;
+    z-index: 3;
+}
+
+.backgroud {
+    background: rgba(125, 151, 218, 0.8);
+    z-index: 4;
 }
 
 .hidden {

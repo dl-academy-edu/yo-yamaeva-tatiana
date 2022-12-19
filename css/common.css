@@ -162,7 +162,7 @@ a {
 
 .footer__list-item {
     font-weight: 400;
-    margin-left: 177px;
+    margin-right: 121px;
     color: #FFFFFF;
 }
 
@@ -195,10 +195,12 @@ a {
     background: #000000;
     padding: 9px 22px;
     width: 81px;
+    height: 43px;
     margin-left: -5px;
 }
 
 .footer__inner-wrap {
+    display: flex;
     border-top: 1px solid #666666;
     width: 1180px;
     padding-top: 28px;
@@ -210,7 +212,7 @@ a {
     display: flex;
     align-items: center;
     position: relative;
-    margin-right: 155px;
+    margin-right: 142px;
 }
 
 .rating__group {
@@ -265,7 +267,7 @@ a {
 
 .rating__group:not(:checked) > label:hover,
 .rating__group:not(:checked) > label:hover ~ label {
-    background-image: url('../icon/star__hover.svg');
+    background-image: url('../icon/starhover.svg');
     background-repeat: no-repeat; 
     width: 13px; 
     height: 13px; 
@@ -277,7 +279,7 @@ a {
 .rating__group > input:checked ~ label:hover,
 .rating__group > input:checked ~ label:hover ~ label,
 .rating__group > label:hover ~ input:checked ~ label {
-    background-image: url('../icon/star__hover.svg');
+    background-image: url('../icon/starhover.svg');
     width: 13px;
     height: 13px;
 }
@@ -286,7 +288,6 @@ a {
     position: relative;
     opacity: 0.5;
 }
-
 
 
 

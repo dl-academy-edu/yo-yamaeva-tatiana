@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheey" href="./css/toys.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/normolize.css">
     <title>Toys</title>
@@ -17,22 +17,28 @@
         <img src="./icon/logo.svg" alt="logo" width="100" height="52">
         </a>
         <ul class="header__list">
-            <li class="header__list-item"><a href="./catalog.html">BLOG</a></li>
+            <li class="header__list-item"><a href="./blog.html">BLOG</a></li>
             <li class="header__list-item"><a href="./catalog.html">CATALOG</a></li>
             <li class="header__list-item"><a href="#">ABOUT US</a></li>
         </ul>
         <ul class="header__contact">
         <img src="./icon/search.svg"  class="header__contact-found" alt="loupe" width="17" height="17">
-            <li class="contact"><a href="./ContactUs.html">CONTACT US</a></li>
+            <li class="contact"><a href="./contact.html">CONTACT US</a></li>
         </ul>
         </header>
         <main>
-            <section>
-        <h1>TOY FOR KIDS</h1>
-        <p>Home</p><img src="./icon/vectorright.svg" alt="strelka-right"><p>Catalogs</p><img src="./icon/vectorright.svg" alt="strelka-right"><p>Toys</p>       
-            </section>
-            <div>
-            <h1>Cost</h1>
+            <div class="container">
+            <h1 class="title heading__title">TOY FOR KIDS</h1>
+            <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><p class="breadcrumbs-item-text breadcrumbs-item-home">Home</p></li> 
+            <li class="breadcrumbs-item"><p  class="breadcrumbs-item-text breadcrumbs-item-catalog">Catalog</p></li>
+            <li class="breadcrumbs-item"><p  class="breadcrumbs-item-text breadcrumbs-item-toys">Toys</p></li>     
+            </ul>
+            </div>
+        <div>
+        <section>
+            <div> 
+            <h5>Cost</h5>
             <input type="range"><p>0  500</p>
             </div>
             <section>
@@ -42,18 +48,20 @@
                 <input type="checkbox"><p>White</p>
             </section>
             <section>
-                <h1>Delivery</h1>
+                <h5>Delivery</h5>
                 <input type="radio"><p>Free Shopping</p>
                 <input type="radio"><p>Fast Shopping</p>
             </section>
             <section>
-                <h1>Amount</h1>
+                <h5>Amount</h5>
             </section>
             <section>
                 <button>APPLY</button>
             </section>
-            <section>
-                <ul>
+        </section>
+        </div>
+            <section class="container">
+                <ul class="servises__list">
                 <li>
                <img src="./image/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
                <a href="SHARKY BEAN BAG CHAIR COVER">SHARKY BEAN BAG CHAIR COVER</a>
@@ -67,7 +75,8 @@
                 <a href="CIBO FULL APRON">CIBO FULL APRON</a>
                </li>
             </section>
-            <section>
+            <section class="container">
+                <ul class="servises__list">  
                <li>
                 <img src="./image/gatcha.png" alt="GATCHA GATCHA GUMBALL MASHINE" width="380" height="385">
                 <a href="GATCHA GATCHA GUMBALL MASHINE">GATCHA GATCHA GUMBALL MASHINE</a>
@@ -97,7 +106,7 @@
             <div class="container footer__wrap title__footer">
                 <section class="navigaton">
                     <h5 class="title__footer-list">Navigaton</h5>
-                    <ul class="nav-item">
+                    <ul class="nav-item footer__title">
                         <li class="footer__list">
                             <a class="title__footer-list-item" href="#">About Us</a>
                         </li>
@@ -117,11 +126,10 @@
                             <a class="title__footer-list-item" href="#">Shop By Designer</a>
                         </li>
                     </ul>
-                    <p class="footer__list-item"><a class="title__footer-list-item" href="#">Company Rating</a></p>
                 </section>
                 <section class="information">
                     <h5 class="title__footer-list">Customer information</h5>
-                    <ul class="customer-item">
+                    <ul class="customer-item footer__title">
                         <li class="footer__list">
                             <a class="title__footer-list-item" href="./ContactUs.html">Contact Us</a>
                         </li>
@@ -141,14 +149,13 @@
                             <a class="title__footer-list-item" href="#">Search</a>
                         </li>
                     </ul>
-                    <p class="footer__list-item title__footer-list-item">Copyright 2018 DLK Design Life Kids</p>
                 </section>
                 <section class="connect">
                     <h5 class="title__footer-list">Connect</h5>
-                    <ul class="connect-item">
+                    <ul class="connect-item footer__title footer__title-connect">
                         <div>
                             <label for="input-email"></label>
-                            <input type="text" id="input-email" placeholder="Email">
+                            <input class="input__footer" type="text" id="input-email" placeholder="Email">
                             <button class="btn-footer" type="join">Join</button>
                         </div>
                         <ul class="socials-footer">
@@ -158,8 +165,26 @@
                             <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
                         </ul>
                     </ul>
-                    <p class="footer__list-connect"><a class="title__footer-list-connect" href="#">Web Design - Direct Line Development</a></p>
                 </section>
+            </div>
+            <div class="container footer__inner-wrap">
+                <div class="rating__wrap">
+                    <p><a class="footer__list-company" href="#">Company Rating</a></p>
+                    <div class="rating__group">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label class="label-rating" for="star-5" title="Супер"></label>
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label class="label-rating" for="star-4" title="Хорошо"></label>
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label class="label-rating" for="star-3" title="Пойдёт"></label>
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label class="label-rating" for="star-2" title="Не очень"></label>
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label class="label-rating" for="star-1" title="Все плохо"></label>
+                    </div>
+                </div>
+                <p class="footer__list-item">Copyright 2018 DLK Design Life Kids</p>
+                <p><a class="footer__list-connect" href="#">Web Design - Direct Line Development</a></p>
             </div>
         </footer>
 </body>
