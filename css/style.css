@@ -6,7 +6,7 @@
     background-color: #EEE4DB;
     display: flex;
     margin-top: 80px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .handle {
@@ -270,16 +270,31 @@
 
 /*popup*/
 
-.popup { 
-    position: absolute;
+.popup__color {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
     left: 360px;
     top: 113px;
-    z-index: 3;
+}
+
+.popup { 
+    position: absolute;
+
+    z-index: 4;
 }
 
 .backgroud {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: rgba(125, 151, 218, 0.8);
-    z-index: 4;
+    z-index: 2;
 }
 
 .hidden {
@@ -290,6 +305,7 @@
     width: 680px;
     height: 542px;
     padding: 50px;
+    z-index: 4;
     background: #E5EAF8;
 }
 
@@ -321,26 +337,92 @@
     margin-top: 20px;
 }
 
-.input-message {
-    width: 600px;
-    height: 150px;
-} 
-
 .popup__text {
     margin-top: 20px;
 }
 
-.popup__checkbox {
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #C29974;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
     width: 15px;
     height: 15px;
-    background-image: url('../icon/checkbox.svg');
+    background-image: url('../icon/checkmark.svg');
 }
 
 .popup-click {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    margin-right: 15px;
+}
+
+.popup-close:not(:checked) > label {
+    background-image: url('../icon/crossoff.svg');
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close:not(:checked) > label::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+}
+
+.popup__close > input:checked ~ label {
+    color: #FFFFFF;
+    background-image: url('../icon/crosson.svg'); 
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close:not(:checked) > label:hover,
+.popup-close:not(:checked) > label:hover ~ label {
+    background-image: url('../icon/crosshover.svg');
+    width: 15px; 
+    height: 15px; 
+    color: #FFFFFF;   
+}    
+
+.popup-close > input:checked + label:hover,
+.popup-close > input:checked + label:hover ~ label,
+.popup-close > input:checked ~ label:hover,
+.popup-close > input:checked ~ label:hover ~ label,
+.popup-close > label:hover ~ input:checked ~ label {
+    background-image: url('../icon/crosshover.svg');
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close > label:active {
+    position: relative;
+    opacity: 0.5;
 }
 
 input {
@@ -356,6 +438,11 @@ input {
     width: 290px;
     height: 50px;
 }
+
+.input-message {
+    width: 600px;
+    height: 150px;
+} 
 
 textarea {
     border: 1px solid rgba(0, 0, 0, 0.2);

@@ -215,9 +215,9 @@
             <p><a class="footer__list-connect" href="#">Web Design - Direct Line Development</a></p>
         </div>
     </footer>
-    <div class="container">
         <section class="popup backgroud">
             <h2 class="hidden">Popup</h2>
+            <div class="popup__color">
             <form action="#" class="popup-form">
                 <div class="label__wrapper">
                     <label for="input-name">Name</label>
@@ -238,15 +238,15 @@
                     <textarea class="input-message" id="input-message"></textarea>
                 </div>
                 <div class="popup__text">
-                    <input class="popup__checkbox" type="checkbox" id="input-click">
+                    <input type="checkbox" class="custom-checkbox" id="input-click">
                     <label class="popup-click" for="input-click">By clicking on the button, you consent to the
                         processing of your personal data</label>
                 </div>
                 <button type="submit" class="btn">SUBMIT</button>
             </form>
-            <button type="button" class="popup-close"><img src="./icon/cross.svg" width="15" height="15" alt="cross"></button>
+            </div>
+            <button type="button" class="popup-close"></button>
         </section>
-    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
