@@ -16,7 +16,7 @@
 .breadcrumbs-item-home::after {
     content: '';
     display: inline-block;
-    background-image: url(../icon/vectorright.svg);
+    background-image: url('../icon/vectorright.svg');
     margin-left: 20px;
     width: 8px;
     height: 12px;
@@ -31,9 +31,9 @@
     color: #1E0606;
 }
 
-.breadcrumbs-item-catalog {
-color: #1E0606;
-opacity: 0.5;
+.breadcrumbs-item-blog {
+    color: #1E0606;
+    opacity: 0.5;
 }
 
 .servises__list {

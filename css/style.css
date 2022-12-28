@@ -272,23 +272,21 @@
 
 .popup__color {
     position: fixed;
-    top: 0;
+    top: 113px;
     right: 0;
     bottom: 0;
-    left: 0;
-    z-index: 3;
     left: 360px;
-    top: 113px;
+    z-index: 3;
 }
 
 .popup { 
     position: absolute;
-
-    z-index: 4;
+    top: 50%;
+    left: 30%;
+    z-index: 99;
 }
 
 .backgroud {
-    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -450,8 +448,8 @@ textarea {
 
 .popup-close {
     position: absolute;
-    top: 1px;
-    left: 658px;
+    top: 113px;
+    left: 1050px;
     border: none;
     background: none;
 }

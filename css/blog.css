@@ -1,0 +1,61 @@
+/* Стилизация мэйна */
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin-top: 60px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 20px;
+}
+
+.breadcrumbs-item-home::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../icon/vectorright.svg);
+    margin-left: 20px;
+    width: 8px;
+    height: 12px;
+}
+
+.breadcrumbs-item-text {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.breadcrumbs-item-blog {
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.information__list {
+    display: flex;
+}
+
+.data {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    color: #818181;
+}
+
+.text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 380px;
+}

@@ -23,19 +23,19 @@
         </ul>
         <ul class="header__contact">
         <img src="./icon/search.svg"  class="header__contact-found" alt="loupe" width="17" height="17">
-            <li class="header__contact contact"><a href="./ContactUs.html">CONTACT US</a></li>
+            <li class="header__contact contact"><a href="./contact.html">CONTACT US</a></li>
         </ul>
         </header>
         <main>
             <div class="container">
-                <h1>Contact Us</h1>
+                <h1 class="caption">CONTACT US</h1>
             <ul class="breadcrumbs">
             <li class="breadcrumbs"><p class="breadcrumbs-item-text breadcrumbs-item-home">Home</p></li>
             <li class="breadcrumbs"><p class="breadcrumbs-item-text breadcrumbs-item-contact">Contact Us</p></li>  
             </ul>
             </div>
-            <div class="container">
-                <section class="popup">
+            <div class="container text__wrap">
+                <section class="popup popup__contact">
                     <h2 class="hidden">Popup</h2>
                     <form action="#" class="popup-form">
                         <div class="label__wrapper">
@@ -57,13 +57,20 @@
                             <textarea class="input-message" id="input-message"></textarea>
                         </div>
                         <div class="popup__text">
-                        <input class="popup__checkbox" type="checkbox" id="input-click">
-                        <label class="popup-click" for="input-click">By clicking on the button, you consent to the processing of your personal data</label>
+                                <input type="checkbox" class="custom-checkbox" id="input-click">
+                                <label class="popup-click" for="input-click">By clicking on the button, you consent to the processing of your personal data</label>
                         </div>
                         <button type="submit" class="btn">SUBMIT</button>
                         <button type="button" class="popup-close"><img src="./icon/cross.svg" width="15" height="15" alt="cross"></button>
                     </form>
                 </section>
+                    <div class="text">
+                        <p class="text-one">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                        <p class="text-two">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                        <div>
+                            <p class="text-three">AN EXPERT IS WAITING TO HELP YOU!</p>
+                        </div>
+                    </div>
             </div>
         </main>
         <footer class="footer background">
@@ -129,36 +136,27 @@
                             <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
                         </ul>
                     </ul>
-                    </section>
+                </section>
             </div>
-                <div class="container footer__inner-wrap">
-                    <div class="rating__wrap">
+            <div class="container footer__inner-wrap">
+                <div class="rating__wrap">
                     <p><a class="footer__list-company" href="#">Company Rating</a></p>
                     <div class="rating__group">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label class="label-rating" for="star-5" title="Супер"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label class="label-rating" for="star-4" title="Хорошо"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label class="label-rating" for="star-3" title="Пойдёт"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label
-                    class="label-rating"
-                    for="star-2"
-                    title="Не очень"
-                     ></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label 
-                    class="label-rating"
-                    for="star-1"
-                    title="Все плохо"
-                    ></label>
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label class="label-rating" for="star-5" title="Супер"></label>
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label class="label-rating" for="star-4" title="Хорошо"></label>
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label class="label-rating" for="star-3" title="Пойдёт"></label>
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label class="label-rating" for="star-2" title="Не очень"></label>
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label class="label-rating" for="star-1" title="Все плохо"></label>
                     </div>
+                </div>
                 <p class="footer__list-item">Copyright 2018 DLK Design Life Kids</p>
-                <div class="footer__link">
-                    <p><a class="footer__list-connect" href="#">Web Design - Direct Line Development</a></p>
-                </div>
-                </div>
+                <p><a class="footer__list-connect" href="#">Web Design - Direct Line Development</a></p>
+            </div>
         </footer>
 </body>
 </html>

@@ -56,16 +56,37 @@
 
 .servises__list {
     display: flex;
-    margin: 20px;
+ } 
+
+.servises__list-item {
+    display: flex;
+    margin-top: 20px;
 }
 
-/* .link-title {
+.item-servises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-title {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    padding-top: 30px;
-    text-align: center;
-} */
+}
+
+.price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.numbers {
+    display: flex;
+    border: none;
+}
 
