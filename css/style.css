@@ -271,28 +271,22 @@
 /*popup*/
 
 .popup__color {
+    display: none;
     position: fixed;
-    top: 113px;
-    right: 0;
-    bottom: 0;
-    left: 360px;
-    z-index: 3;
-}
-
-.popup { 
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    z-index: 99;
-}
-
-.backgroud {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 3;
     background: rgba(125, 151, 218, 0.8);
-    z-index: 2;
+}
+
+.popup { 
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 99;
 }
 
 .hidden {
