@@ -216,6 +216,10 @@
     justify-content: space-between;
 }
 
+.socials-title {
+    display: none;
+}
+
 .about__text {
     display: flex;
     margin-top: 90px;
@@ -272,6 +276,7 @@
 
 .popup__color {
     position: fixed;
+    display: flex;
     top: 113px;
     right: 0;
     bottom: 0;
@@ -280,10 +285,67 @@
 }
 
 .popup { 
+    display: none;
     position: absolute;
     top: 50%;
     left: 30%;
     z-index: 99;
+}
+
+.open {
+    display: flex;
+}
+
+.popup-close {
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 355px;
+    background: none;
+}
+
+.popup-close:not(:checked) > label {
+    background-image: url('../icon/crossoff.svg');
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close:not(:checked) > label::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+}
+
+.popup__close > input:checked ~ label {
+    color: #FFFFFF;
+    background-image: url('../icon/crosson.svg'); 
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close:not(:checked) > label:hover,
+.popup-close:not(:checked) > label:hover ~ label {
+    background-image: url('../icon/crosshover.svg');
+    width: 15px; 
+    height: 15px; 
+    color: #FFFFFF;   
+}    
+
+.popup-close > input:checked + label:hover,
+.popup-close > input:checked + label:hover ~ label,
+.popup-close > input:checked ~ label:hover,
+.popup-close > input:checked ~ label:hover ~ label,
+.popup-close > label:hover ~ input:checked ~ label {
+    background-image: url('../icon/crosshover.svg');
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close > label:active {
+    position: relative;
+    opacity: 0.5;
 }
 
 .backgroud {
@@ -378,51 +440,6 @@
     line-height: 16px;
 }
 
-.popup-close:not(:checked) > label {
-    background-image: url('../icon/crossoff.svg');
-    background-size: cover;
-    width: 15px;
-    height: 15px;
-}
-
-.popup-close:not(:checked) > label::before {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 0;
-}
-
-.popup__close > input:checked ~ label {
-    color: #FFFFFF;
-    background-image: url('../icon/crosson.svg'); 
-    width: 15px;
-    height: 15px;
-}
-
-.popup-close:not(:checked) > label:hover,
-.popup-close:not(:checked) > label:hover ~ label {
-    background-image: url('../icon/crosshover.svg');
-    width: 15px; 
-    height: 15px; 
-    color: #FFFFFF;   
-}    
-
-.popup-close > input:checked + label:hover,
-.popup-close > input:checked + label:hover ~ label,
-.popup-close > input:checked ~ label:hover,
-.popup-close > input:checked ~ label:hover ~ label,
-.popup-close > label:hover ~ input:checked ~ label {
-    background-image: url('../icon/crosshover.svg');
-    width: 15px;
-    height: 15px;
-}
-
-.popup-close > label:active {
-    position: relative;
-    opacity: 0.5;
-}
-
 input {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -446,10 +463,4 @@ textarea {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.popup-close {
-    position: absolute;
-    top: 113px;
-    left: 1050px;
-    border: none;
-    background: none;
-}
+
