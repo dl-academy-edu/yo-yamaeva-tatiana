@@ -30,35 +30,55 @@
             <div class="container">
             <h1 class="title heading__title">TOY FOR KIDS</h1>
             <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><p class="breadcrumbs-item-text breadcrumbs-item-home">Home</p></li> 
-            <li class="breadcrumbs-item"><p  class="breadcrumbs-item-text breadcrumbs-item-catalog">Catalog</p></li>
-            <li class="breadcrumbs-item"><p  class="breadcrumbs-item-text breadcrumbs-item-toys">Toys</p></li>     
+            <li class="breadcrumbs-item"><a href="./index.html" class="breadcrumbs-item-text breadcrumbs-item-home">Home</a></li> 
+            <li class="breadcrumbs-item"><a href="./catalog.html" class="breadcrumbs-item-text breadcrumbs-item-catalog">Catalog</a></li>
+            <li class="breadcrumbs-item"><p class="breadcrumbs-item-text breadcrumbs-item-toys">Toys</p></li>     
             </ul>
             </div>
-        <div>
-        <section>
-            <div class="background"> 
-            <h5>Cost</h5>
-            <input type="range"><p>0  500</p>
+        <div class="background__features">
+            <div class="container features">
+                <section>
+                    <h5 class="title__features">Cost</h5>
+                    <input class="features-range" type="range">
+                    <div class="number__wrapper">
+                        <p>0</p>
+                        <p class="number__features">500</p>
+                    </div>
+                </section>
+                <section class="color__features">
+                <h5 class="title__features">Color</h5>
+                    <div class="features__checkbox">
+                        <input type="checkbox" class="cuctom-checkbox" id="input-click">
+                        <label for="input-click">Black</label>
+                    </div>
+                    <div class="features__checkbox">
+                        <input type="checkbox" class="cuctom-checkbox" id="input-click">
+                        <label for="input-click">Blue</label>
+                    </div>
+                    <div class="features__checkbox">
+                        <input type="checkbox" class="cuctom-checkbox" id="input-click">
+                        <label for="input-click">Green</label>
+                    </div>
+                    <div class="features__checkbox">
+                        <input type="checkbox" class="cuctom-checkbox" id="input-click">
+                        <label for="input-click">White</label>
+                    </div>
+                </section>
+                <section class="delivery__features">
+                    <h5 class="title__features">Delivery</h5>
+                    <input type="radio"><p>Free Shopping</p>
+                    <input type="radio"><p>Fast Shopping</p>
+                </section>
+                <section class="amount__features">
+                    <h5 class="title__features">Amount</h5>
+                    <button type="button">0-5</button>
+                    <button type="button">10-20</button>
+                    <button type="button">20-50</button>
+                </section>
+                <section  class="">
+                    <button>APPLY</button>
+                </section>
             </div>
-            <section>
-                <input type="checkbox"><p>black</p>
-                <input type="checkbox"><p>Blue</p> 
-                <input type="checkbox"><p>Green</p>
-                <input type="checkbox"><p>White</p>
-            </section>
-            <section>
-                <h5>Delivery</h5>
-                <input type="radio"><p>Free Shopping</p>
-                <input type="radio"><p>Fast Shopping</p>
-            </section>
-            <section>
-                <h5>Amount</h5>
-            </section>
-            <section>
-                <button>APPLY</button>
-            </section>
-        </section>
         </div>
             <section class="container">
                 <ul class="servises__list">
@@ -97,13 +117,17 @@
                </li>
                 </ul>
             </section>
-            <div class="container numbers">
-                <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
+            <div>
+                <ul class="numbers">
+                    <li class="number__link"><a class="number__activ" href="#">1</a></li>
+                    <li class="number__link"><a href="#">2</a></li>
+                    <li class="number__link"><a href="#">3</a></li>
+                    <li class="number__link"><a href="#">4</a></li>
                 </ul>
+            <div class="control">
+                <img src="./icon/vlefttoys.svg" alt="arrow-left" width="13" height="26">
+                <img src="./icon/vrighttoys.svg" alt="arrow-right" width="13" height="26">
+            </div>
             </div>
         </main>
         <footer class="footer background">
@@ -164,9 +188,9 @@
                         </div>
                         <ul class="socials-footer">
                             <li><a href="#"><img src="./icon/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="#"><img src="./icon/twitter.svg" alt="twitter"></li>
-                            <li><a href="#"><img src="./icon/pinterest.svg" alt="pinterest"></li>
-                            <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
+                            <li><a href="https://investor.twitterinc.com/"><img src="./icon/twitter.svg" alt="twitter"></a></li>
+                            <li><a href="https://ru.pinterest.com/"><img src="./icon/pinterest.svg" alt="pinterest"></a></li>
+                            <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></a></li>
                         </ul>
                     </ul>
                 </section>

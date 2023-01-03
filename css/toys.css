@@ -18,7 +18,7 @@
 .breadcrumbs-item-home::after {
     content: '';
     display: inline-block;
-    background-image: url('../icon/vectorright.svg');
+    background-image: url('../icon/vector__right.svg');
     margin-left: 20px;
     width: 8px;
     height: 12px;
@@ -36,7 +36,7 @@
 .breadcrumbs-item-catalog::after {
     content: '';
     display: inline-block;
-    background-image: url('../icon/vectorright.svg');
+    background-image: url('../icon/vector__right.svg');
     margin-left: 20px;
     width: 8px;
     height: 12px;
@@ -47,17 +47,58 @@
     opacity: 0.5;
 }
 
-<<<<<<< Updated upstream
-=======
-.background {
-    position: relative;
-    background: rgba(125, 151, 218, 0.2,);
+.background__features {
+    background: #7D97DA33;
+    height: 254px;
     margin-top: 50px;
 }
 
->>>>>>> Stashed changes
+.features {
+    display: flex;
+    padding-top: 42px;
+}
+
+.title__features {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.features-range {
+    width: 188px;
+    margin-top: 25px;
+    background-image: url('../icon/ellipse.svg');
+}
+
+.number-range {
+    margin-right: 10px;
+}
+
+.number__wrapper {
+    display: flex;
+}
+
+.number__features {
+    margin-left: 169px;
+}
+
+.color__features {
+    margin-left: 94px;
+}
+
+.delivery__features {
+    margin-left: 156px;
+}
+
+.amount__features {
+    margin-left: 69px;
+}
+
 .servises__list {
     display: flex;
+    margin-top: 60px;
  } 
 
 .servises__list-item {
@@ -87,8 +128,25 @@
     line-height: 22px;
 }
 
-.numbers {
+.control {
     display: flex;
-    border: none;
 }
 
+.numbers {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    margin-left: 583px;
+    margin-top: 78px;
+}
+
+.number__link {
+    margin-right: 64px;
+}
+
+.number__activ {
+    color: #C29974;
+}
