@@ -77,41 +77,31 @@
 }
 
 .features__checkbox {
+    display: flex;
     margin-top: 15px;
 }
 
-.custom-checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.custom-checkbox+label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-}
-
-.custom-checkbox+label::before {
+.checkbox-click::before {
     content: '';
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 2.8px solid #C29974;
-    border-radius: 0.25em;
-    margin-right: 0.5em;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    margin-left: -25px;
+    position: absolute;
+    background-image: url('../image/squr.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
 }
 
-.custom-checkbox:checked+label::before {
-    width: 15px;
-    height: 15px;
-    background-color: #FFFFFF;
+.custom-checkbox:checked + .checkbox-click::before {
+    content: '';
+    width: 19px;
+    height: 19px;
     background-image: url('../icon/checkmark.svg');
+}
+
+input {
+    display: none;
 }
 
 .number__features {
@@ -126,8 +116,64 @@
     margin-left: 156px;
 }
 
+.features__radio {
+    margin-top: 10px;
+}
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-click {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .amount__features {
     margin-left: 69px;
+}
+
+.numbers__button {
+    margin-top: 15px;
+}
+
+.btn__features {
+    border: none;
+    width: 80px;
+    height: 35px;
+    background: #FFFFFF;
+    margin-left: -4px;
+    padding: 7x 19x;
+}
+
+.btn-active {
+    background: #F3D0DB;
 }
 
 .servises__list {
