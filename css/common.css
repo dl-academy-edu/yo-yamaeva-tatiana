@@ -84,6 +84,22 @@ a {
     margin-right: 15px;
 }
 
+.header-logo:hover {
+    opacity: 0.5;
+}
+
+.header-blog:hover {
+    opacity: 0.5;
+}
+
+.header-catalog:hover {
+    opacity: 0.5;
+}
+
+.header-about:hover {
+    opacity: 0.5;
+}
+
 .contact {
     font-weight: 700;
     font-size: 14px;
@@ -93,6 +109,10 @@ a {
 .header__contact {
     display: flex;
     align-items: center;
+}
+
+.header__contact:hover {
+    opacity: 0.5;
 }
 
 .header__contact-found {
