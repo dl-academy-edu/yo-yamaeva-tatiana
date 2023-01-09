@@ -5,7 +5,7 @@
     height: 411px;
     background-color: #EEE4DB;
     display: flex;
-    margin-top: 80px;
+    margin-top: 95px;
     z-index: 1;
 }
 
@@ -31,6 +31,10 @@
     margin-left: 31px;
     margin-bottom: 11px;
     background-color: #D6CAC2;
+}
+
+.swich:hover {
+    background: rgba(30, 6, 6, 0.6);
 }
 
 .active {
@@ -62,6 +66,14 @@
     height: 88px;
 }
 
+.title__banner {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+}
+
 .title-two {
     font-family: 'Crimson Text';
     font-style: italic;
@@ -77,8 +89,8 @@
 
 .monster {
     position: absolute;
-    top: -50px;
-    left: 445px;
+    top: -41px;
+    left: 385px;
 }
 
 .image {
@@ -275,7 +287,6 @@
 /*popup*/
 
 .popup__color {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -284,13 +295,78 @@
     z-index: 3;
     background: rgba(125, 151, 218, 0.8);
 }
+.popup__wrapper {
+    display: flex;
+    z-index: 10;
+}
 
 .popup { 
     display: none;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 30%;
     z-index: 99;
+}
+
+.open {
+    display: flex;
+}
+
+.popup-close {
+    margin-left: 10px;
+    background: none;
+    background-image: url('../icon/cross.svg');
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+
+.popup-close::not(:checked) > input {
+    display: none;
+}
+
+.popup-close:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    background-image: url('../icon/crossoff.svg');
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close:not(:checked) > label:before {
+    content:'';
+    width: 15px;
+    height: 15px;
+}
+
+.popup-close > input:checked ~ label {
+    color: #FFFFFF; 
+    background-image: url('../icon/crosson.svg');
+    width: 15px;
+    height: 15px;   
+}
+
+.popup-close:not(:checked) > label:hover,
+.popup-close:not(:checked) > label:hover ~ label {
+    background-image: url('../icon/crosshover.svg');
+    background-repeat: no-repeat;
+    width: 13px; 
+    height: 13px; 
+    color: #FFFFFF;   
+}
+
+.popup-close > input:checked + label:hover,
+.popup-close > input:checked + label:hover ~ label,
+.popup-close > input:checked ~ label:hover,
+.popup-close > input:checked ~ label:hover ~ label,
+.popup-close > label:hover ~ input:checked ~ label {
+    background-image: url('../icon/crosshover.svg');
+}
+
+.popup-close:hover {
+    opacity: 0.5;
 }
 
 .hidden {
