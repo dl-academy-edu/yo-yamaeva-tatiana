@@ -34,6 +34,7 @@
 }
 
 .swich:hover {
+    cursor: pointer;
     background: rgba(30, 6, 6, 0.6);
 }
 
@@ -143,6 +144,14 @@
     top: 44.07%;
     bottom: 44.07%;
     color: #FFFFFF;
+}
+
+.link-active:hover {
+    text-decoration: underline;
+}
+
+.link-active:focus {
+    text-decoration: underline;
 }
 
 .control {
