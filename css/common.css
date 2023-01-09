@@ -88,16 +88,32 @@ a {
     opacity: 0.5;
 }
 
+.header-logo:active {
+    opacity: 0;
+}
+
 .header-blog:hover {
     opacity: 0.5;
+}
+
+.header-blog:active {
+    opacity: 0;
 }
 
 .header-catalog:hover {
     opacity: 0.5;
 }
 
+.header-catalog:active {
+    opacity: 0;
+}
+
 .header-about:hover {
     opacity: 0.5;
+}
+
+.header-about:active {
+    opacity: 0;
 }
 
 .contact {
@@ -113,6 +129,10 @@ a {
 
 .header__contact:hover {
     opacity: 0.5;
+}
+
+.header__contact:active {
+    opacity: 0;
 }
 
 .header__contact-found {
