@@ -12,14 +12,14 @@
     <title>Toys</title>
 </head>
 <body>
-    <header  class="container header">
+    <header class="container header">
         <a href="./index.html">
-        <img src="./icon/logo.svg" alt="logo" width="100" height="52">
+        <img class="header-logo" src="./icon/logo.svg" alt="logo" width="100" height="52">
         </a>
         <ul class="header__list">
-            <li class="header__list-item"><a href="./blog.html">BLOG</a></li>
-            <li class="header__list-item"><a href="./catalog.html">CATALOG</a></li>
-            <li class="header__list-item"><a href="#">ABOUT US</a></li>
+            <li class="header__list-item header-blog"><a href="./blog.html">BLOG</a></li>
+            <li class="header__list-item header-catalog"><a href="./catalog.html">CATALOG</a></li>
+            <li class="header__list-item header-about"><a href="#">ABOUT US</a></li>
         </ul>
         <ul class="header__contact">
             <li><img src="./icon/search.svg"  class="header__contact-found" alt="loupe" width="17" height="17"></li>
@@ -39,7 +39,7 @@
             <div class="container features">
                 <section>
                     <h5 class="title__features">Cost</h5>
-                    <input class="features-range" type="range">
+                    <input type="range" class="range-features">
                     <div class="number__wrapper">
                         <p>0</p>
                         <p class="number__features">500</p>
@@ -49,20 +49,20 @@
                 <h2 class="title__features">Color</h2>
                     <div class="features__checkbox">
                     <div class="features-color">
-                        <input type="checkbox" class="custom-checkbox" id="input-click">
-                        <label class="popup-click" for="input-click">Black</label>
+                        <input type="checkbox" class="custom-checkbox" id="Black">
+                        <label class="popup-click" for="Black">Black</label>
                     </div>
                     <div class="features-color">
-                        <input type="checkbox" class="custom-checkbox" id="input-click">
-                        <label for="input-click">Blue</label>
+                        <input type="checkbox" class="custom-checkbox" id="Blue">
+                        <label class="popup-click" for="Blue">Blue</label>
                     </div>
                     <div class="features-color">
-                        <input type="checkbox" class="custom-checkbox" id="input-click">
-                        <label for="input-click">Green</label>
+                        <input type="checkbox" class="custom-checkbox" id="Green">
+                        <label class="popup-click" for="Green">Green</label>
                     </div>
                     <div class="features-color">
-                        <input type="checkbox" class="custom-checkbox" id="input-click">
-                        <label for="input-click">White</label>
+                        <input type="checkbox" class="custom-checkbox" id="White">
+                        <label class="popup-click" for="White">White</label>
                     </div>
                     </div>
                 </section>
@@ -70,12 +70,12 @@
                     <legend class="title__features">Delivery</legend>
                     <ul class="delivery__list"> 
                         <li class="delivery__radio">
-                            <input class="delivery__list-input" type="radio" id="delivery" name="shipping">
-                            <label class="delivery__list-label" for="delivery">Free shipping</label>
+                            <input class="delivery__list-input radio" type="radio" id="Free" name="shipping">
+                            <label class="delivery__list-label" for="Free">Free shipping</label>
                         </li>
                         <li class="delivery__radio-fast">
-                            <input class="delivery__list-input" type="radio" id="delivery" name="shipping">
-                            <label class="delivery__list-label" for="delivery">Fast shipping</label>
+                            <input class="delivery__list-input radio" type="radio" id="Fast" name="shipping">
+                            <label class="delivery__list-label" for="Fast">Fast shipping</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -87,46 +87,63 @@
                         <button class="btn__features" type="button">20-50</button>
                     </div>
                 </section>
-                <!-- <section  class="">
-                    <button>APPLY</button>
-                </section> -->
+                <section  class="apply">
+                    <button class="btn-apply" type="button">APPLY</button>
+                </section>
             </div>
         </div>
             <section class="container">
                 <ul class="servises__list">
                 <li class="item-servises">
-               <img class="link-click" src="./image/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
-               <a class="link-title" href="SHARKY BEAN BAG CHAIR COVER">SHARKY BEAN BAG CHAIR COVER</a>
+               <img src="./image/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
+               <a class="link-title" href="#">SHARKY BEAN BAG CHAIR COVER</a>
                <p class="price">$60.00 USD</p>
+               <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
                 </li>
                <li class="item-servises">
-                <img class="link-click" src="./image/deco.png" alt="BRASS DECO FRAMES" width="380" height="385">
-                <a class="link-title" href="BRASS DECO FRAMES">BRASS DECO FFRAMES</a>
+                <img src="./image/deco.png" alt="BRASS DECO FRAMES" width="380" height="385">
+                <a class="link-title" href="#">BRASS DECO FFRAMES</a>
                 <p class="price">$66.00 USD</p>
+                <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
                </li>
                <li class="item-servises">
-                <img class="link-click" src="./image/cibo.png" alt="CIBO FULL APRON" width="380" height="385">
-                <a class="link-title" href="CIBO FULL APRON">CIBO FULL APRON</a>
+                <img src="./image/cibo.png" alt="CIBO FULL APRON" width="380" height="385">
+                <a class="link-title" href="#">CIBO FULL APRON</a>
                 <p class="price">$60.00 USD</p>
+                <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
                </li>
-            </section>
-            <section class="container">
-                <ul class="servises__list-item">  
+                </ul>
+                <ul class="servises__list-item">
                <li class="item-servises">
-                <img class="link-click" src="./image/gatcha.png" alt="GATCHA GATCHA GUMBALL MASHINE" width="380" height="385">
-                <a class="link-title" href="GATCHA GATCHA GUMBALL MASHINE">GATCHA GATCHA GUMBALL MASHINE</a>
+                <img src="./image/gatcha.png" alt="GATCHA GATCHA GUMBALL MASHINE" width="380" height="385">
+                <a class="link-title" href="#">GATCHA GATCHA GUMBALL MASHINE</a>
                 <p class="price">$56.00 USD</p>
+                <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
                </li>
                <li class="item-servises">
-                <img class="link-click" src="./image/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385">
-                <a class="link-title" href="CHRISTMAS ADVENT SCENTED CANDLE">CHRISTMAS ADVENT SCENTED CANDLE</a>
+                <img src="./image/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385">
+                <a class="link-title" href="#">CHRISTMAS ADVENT SCENTED CANDLE</a>
                 <p class="price">$29.00 USD</p>
+                <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
                </li>
                <li class="item-servises">
-                <img class="link-click" src="./image/tangle.png" alt="TANGLE SPINING TEA LIGHT" width="380" height="385">
-                <a class="link-title" href="TANGLE SPINING TEA LIGHT">TANGLE SPINING TEA LIGHT</a>
+                <img src="./image/tangle.png" alt="TANGLE SPINING TEA LIGHT" width="380" height="385">
+                <a class="link-title" href="#">TANGLE SPINING TEA LIGHT</a>
                 <p class="price">$56.00 USD</p>
-               </li>
+                <div class="toys__catalog-block">
+                    <p class="toys__catalog-hover">LEARN MORE</p>
+               </div>
+                </li>
                 </ul>
             </section>
             <div>
@@ -144,7 +161,7 @@
         </main>
         <footer class="footer background">
             <div class="container footer__wrap title__footer">
-                <section class="navigaton">
+                <section>
                     <h5 class="title__footer-list">Navigaton</h5>
                     <ul class="nav-item footer__title">
                         <li class="footer__list">
@@ -167,11 +184,11 @@
                         </li>
                     </ul>
                 </section>
-                <section class="information">
+                <section>
                     <h5 class="title__footer-list">Customer information</h5>
                     <ul class="customer-item footer__title">
                         <li class="footer__list">
-                            <a class="title__footer-list-item" href="./ContactUs.html">Contact Us</a>
+                            <a class="title__footer-list-item" href="./contact.html">Contact Us</a>
                         </li>
                         <li class="footer__list">
                             <a class="title__footer-list-item" href="#">Sale Exclusions</a>
@@ -190,7 +207,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="connect">
+                <section>
                     <h5 class="title__footer-list">Connect</h5>
                     <ul class="connect-item footer__title footer__title-connect">
                         <div>
@@ -199,10 +216,10 @@
                             <button class="btn-footer" type="join">Join</button>
                         </div>
                         <ul class="socials-footer">
-                            <li><a href="#"><img src="./icon/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="https://investor.twitterinc.com/"><img src="./icon/twitter.svg" alt="twitter"></a></li>
-                            <li><a href="https://ru.pinterest.com/"><img src="./icon/pinterest.svg" alt="pinterest"></a></li>
-                            <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></a></li>
+                            <li><a class="soc-footer" href="#"><img class="soc-footer" src="./icon/facebook.svg" alt="facebook"></a></li>
+                            <li><a class="soc-footer" href="https://investor.twitterinc.com/"><img src="./icon/twitter.svg" alt="twitter"></a></li>
+                            <li><a class="soc-footer" href="https://ru.pinterest.com/"><img src="./icon/pinterest.svg" alt="pinterest"></a></li>
+                            <li><a class="soc-footer" href="#"><img src="./icon/Instagram.svg" alt="instagram"></a></li>
                         </ul>
                     </ul>
                 </section>

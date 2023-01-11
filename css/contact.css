@@ -25,7 +25,7 @@
 .breadcrumbs-item-home::after {
     content: '';
     display: inline-block;
-    background-image: url(../icon/vectorright.svg);
+    background-image: url('../icon/vector__right.svg');
     margin-left: 20px;
     width: 8px;
     height: 12px;
@@ -162,7 +162,6 @@
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
 }
 
 .custom-checkbox:checked+label::before {
@@ -184,6 +183,16 @@ input {
 .input-popup {
     width: 600px;
     height: 50px;
+}
+
+.input-popup::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 20px;
+    color: #1E0606;
 }
 
 .input-popup-double {

@@ -446,7 +446,6 @@
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
 }
 
 .custom-checkbox:checked+label::before {

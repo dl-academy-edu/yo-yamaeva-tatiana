@@ -16,7 +16,7 @@
 .breadcrumbs-item-home::after {
     content: '';
     display: inline-block;
-    background-image: url('../icon/vectorright.svg');
+    background-image: url('../icon/vector__right.svg');
     margin-left: 20px;
     width: 8px;
     height: 12px;
@@ -31,7 +31,7 @@
     color: #1E0606;
 }
 
-.breadcrumbs-item-blog {
+.breadcrumbs-item-catalog {
     color: #1E0606;
     opacity: 0.5;
 }
@@ -98,8 +98,16 @@
     color: #FFFFFF;
 }
 
+.link-active:hover {
+    text-decoration: underline;
+}
+
+.link-active:focus {
+    text-decoration: underline;
+}
+
 .heading {
-    text-align: center;
+    margin-left: 219px;
 }
 
 .heading__title {
@@ -117,7 +125,7 @@
     height: 44px;
     display: flex;
     margin-top: 15px;
-    margin-left: 20%;
+    margin-left: 219px;
 }
 
 .title__over-one {
@@ -130,5 +138,5 @@
     height: 66px;
     display: flex;
     margin-top: 15px;
-    margin-left: 20%;
+    margin-left: 219px;
 }

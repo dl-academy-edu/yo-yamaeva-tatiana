@@ -56,6 +56,7 @@ li {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: #1E0606;
 }
@@ -169,6 +170,16 @@ a {
     color: #FFFFFF;
 }
 
+.title__footer-list-item:hover {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.title__footer-list-item:focus {
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+
 .title__footer-list {
     font-weight: 400;
     color: #AAAAAA;
@@ -209,6 +220,16 @@ a {
     color: #A2A2A2;
 }
 
+.footer__list-connect:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.footer__list-connect:focus {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
 .connect-item {
     margin-top: 23px;
 }
@@ -224,6 +245,14 @@ a {
     display: flex;
     gap: 5px;
     margin-top: 25px;
+}
+
+.soc-footer:hover {
+    opacity: 0.5;
+}
+
+.soc-footer:active {
+    opacity: 0.2;
 }
 
 .btn-footer {

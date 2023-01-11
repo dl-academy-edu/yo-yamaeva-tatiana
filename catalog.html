@@ -12,14 +12,14 @@
     <title>Catalog</title>
 </head>
 <body>
-    <header  class="container header">
+    <header class="container header">
         <a href="./index.html">
-        <img src="./icon/logo.svg" alt="logo" width="100" height="52">
+        <img class="header-logo" src="./icon/logo.svg" alt="logo" width="100" height="52">
         </a>
         <ul class="header__list">
-            <li class="header__list-item"><a href="./blog.html">BLOG</a></li>
-            <li class="header__list-item"><a href="./catalog.html">CATALOG</a></li>
-            <li class="header__list-item"><a href="#">ABOUT US</a></li>
+            <li class="header__list-item header-blog"><a href="./blog.html">BLOG</a></li>
+            <li class="header__list-item header-catalog"><a href="./catalog.html">CATALOG</a></li>
+            <li class="header__list-item header-about"><a href="#">ABOUT US</a></li>
         </ul>
         <ul class="header__contact">
             <li><img src="./icon/search.svg"  class="header__contact-found" alt="loupe" width="17" height="17"></li>
@@ -32,7 +32,7 @@
     </section>
     <div class="container">
         <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><p class="breadcrumbs-item-text breadcrumbs-item-home">Home</p></li>
+            <li class="breadcrumbs-item"><a href="./index.html" class="breadcrumbs-item-text breadcrumbs-item-home">Home</a></li>
             <li class="breadcrumbs-item"><p class="breadcrumbs-item-text breadcrumbs-item-catalog">Catalog</p></li>
         </ul>
     </div>
@@ -40,29 +40,29 @@
         <ul class="servises__list">
         <li class="image"> 
             <img src="./icon/apparel.svg" alt="APPAREL KIDS" width="280" height="270">
-            <a class="link-title" href="APPAREL KIDS">APPAREL KIDS</a>
+            <a class="link-title link-active" href="#`">APPAREL KIDS</a>
         </li>  
         <li class="image">
             <img src="./icon/holiday.svg" alt="HOLIDAY SHOP" width="280" height="270">
-            <a class="link-title" href="HOLIDAY SHOP">HOLIDAY SHOP</a>
+            <a class="link-title link-active" href="#">HOLIDAY SHOP</a>
         </li>
         <li class="image">
             <img src="./icon/toys.svg" alt="TOYS" width="280" height="270">
-            <a class="link" href="TOYS">TOYS</a>     
+            <a class="link link-active" href="./toys.html">TOYS</a>     
         </li>
          </ul>
         <ul class="servises__list-item">
         <li class="image">
             <img src="./icon/accessories.svg" alt="ACCESSORIES" width="280" height="270">
-            <a class="link__accessories" href="ACCESORIES">ACCESSORIES</a>   
+            <a class="link__accessories link-active" href="#">ACCESSORIES</a>   
         </li>
         <li class="image">
           <img src="./icon/sale.svg" alt="SALE" width="280" height="270"> 
-          <a class="link" href="SALE">SALE</a>
+          <a class="link link-active" href="#">SALE</a>
         </li>
         <li class="image">
             <img src="./icon/adults.svg" alt="APPAREL ADULTS" width="280" height="270">
-            <a class="link-title" href="APPAREL ADULTS">APPAREL ADULTS</a>
+            <a class="link-title link-active" href="#">APPAREL ADULTS</a>
         </li>
         </ul>
     </section>
@@ -74,7 +74,7 @@
     </section>
     <footer class="footer background">
         <div class="container footer__wrap title__footer">
-            <section class="navigaton">
+            <section>
                 <h5 class="title__footer-list">Navigaton</h5>
                 <ul class="nav-item footer__title">
                     <li class="footer__list">
@@ -97,11 +97,11 @@
                     </li>
                 </ul>
             </section>
-            <section class="information">
+            <section>
                 <h5 class="title__footer-list">Customer information</h5>
                 <ul class="customer-item footer__title">
                     <li class="footer__list">
-                        <a class="title__footer-list-item" href="./ContactUs.html">Contact Us</a>
+                        <a class="title__footer-list-item" href="./contact.html">Contact Us</a>
                     </li>
                     <li class="footer__list">
                         <a class="title__footer-list-item" href="#">Sale Exclusions</a>
@@ -120,7 +120,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="connect">
+            <section>
                 <h5 class="title__footer-list">Connect</h5>
                 <ul class="connect-item footer__title footer__title-connect">
                     <div>
@@ -129,10 +129,10 @@
                         <button class="btn-footer" type="join">Join</button>
                     </div>
                     <ul class="socials-footer">
-                        <li><a href="#"><img src="./icon/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="#"><img src="./icon/twitter.svg" alt="twitter"></li>
-                        <li><a href="#"><img src="./icon/pinterest.svg" alt="pinterest"></li>
-                        <li><a href="#"><img src="./icon/Instagram.svg" alt="instagram"></li>
+                        <li><a class="soc-footer" href="#"><img src="./icon/facebook.svg" alt="facebook"></a></li>
+                        <li><a class="soc-footer" href="https://investor.twitterinc.com/"><img src="./icon/twitter.svg" alt="twitter"></a></li>
+                        <li><a class="soc-footer" href="https://ru.pinterest.com/"><img src="./icon/pinterest.svg" alt="pinterest"></a></li>
+                        <li><a class="soc-footer" href="#"><img src="./icon/Instagram.svg" alt="instagram"></a></li>
                     </ul>
                 </ul>
             </section>
