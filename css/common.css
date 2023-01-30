@@ -24,7 +24,7 @@ body {
     max-width: max-content;
     color: #FFFFFF;
     background: #000000;
-    margin-top: 20px;
+    margin-top: 24px;
     padding: 9px 22px;
 }
 
@@ -72,7 +72,7 @@ a {
 .header {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 49px;
 }
 
 .header__list {
@@ -82,7 +82,7 @@ a {
 }
 
 .header__list-item {
-    margin-right: 15px;
+    margin-right: 9px;
 }
 
 .header-logo:hover {
@@ -137,13 +137,13 @@ a {
 }
 
 .header__contact-found {
-    margin-right: 24px;
+    margin-right: 29px;
 }
 
 /*Стилизация футера*/
 
 .footer {
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 100px 110px;
 }
 
@@ -186,17 +186,17 @@ a {
 }
 
 .nav-item {
-    margin-top: 23px;
+    margin-top: 32px;
 }
 
 .customer-item {
-    margin-top: 23px;
+    margin-top: 32px;
 }
 
 .footer__title {
     border-top: 1px solid #666666;
     width: 380px;
-    padding-top: 28px;
+    padding-top: 27px;
 }
 
 .footer__list {
@@ -231,7 +231,7 @@ a {
 }
 
 .connect-item {
-    margin-top: 23px;
+    margin-top: 32px;
 }
 
 .input__footer {
@@ -243,7 +243,7 @@ a {
 
 .socials-footer {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     margin-top: 25px;
 }
 
@@ -269,8 +269,9 @@ a {
 .footer__inner-wrap {
     display: flex;
     border-top: 1px solid #666666;
+    margin-top: 28px;
     width: 1180px;
-    padding-top: 28px;
+    padding-top: 38px;
 }
 
 .rating__wrap {

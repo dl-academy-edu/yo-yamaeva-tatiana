@@ -5,12 +5,13 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
-    margin-top: 76px;
+    margin-top: 62px;
 }
 
 .breadcrumbs {
     display: flex;
     gap: 20px;
+    margin-top: -6px;
 }
 
 .breadcrumbs-item-text {
@@ -41,7 +42,7 @@
 }
 
 .contact__content {
-    margin-top: 50px;
+    margin-top: 48px;
     margin-bottom: 60px;
 }
 
@@ -97,7 +98,7 @@
 .popup-form {
     width: 680px;
     height: 542px;
-    padding: 50px;
+    padding: 42px;
     background: #E5EAF8;
 }
 

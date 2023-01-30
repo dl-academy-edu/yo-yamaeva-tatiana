@@ -2,10 +2,10 @@
 
 .banner {
     position: relative;
-    height: 411px;
+    height: 372px;
     background-color: #EEE4DB;
     display: flex;
-    margin-top: 95px;
+    margin-top: 131px;
     z-index: 1;
 }
 
@@ -29,7 +29,7 @@
     width: 31px;
     height: 3px;
     margin-left: 31px;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
     background-color: #D6CAC2;
 }
 
@@ -62,7 +62,7 @@
 .title {
     font-family: 'Montserrat';
     font-style: normal;
-    margin-top: 89px;
+    margin-top: 55px;
     width: 307px;
     height: 88px;
 }
@@ -86,19 +86,22 @@
 
 .servises__list {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .monster {
     position: absolute;
-    top: -41px;
-    left: 385px;
+    top: -59px;
+    left: 446px;
+    width: 636px;
+    height: 431px;
 }
 
 .image {
     position: relative;
-    margin-top: 23px;
-    margin-left: 20px;
-    
+    margin-top: 41px;
+    margin-right: 20px;
+    background: green;
 }
 
 .link-title {
@@ -167,17 +170,18 @@
     font-family: 'Open Sans';
     font-style: normal;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 32px;
     width: 580px;
     height: 44px;
 }
 
 .delivery__content {
-    margin-top: 90px;
+    margin-top: 98px;
 }
 
 .picture {
    margin-top: -500px;
+   background: green;
 }
 
 .content {
@@ -194,7 +198,7 @@
     line-height: 22px;
     width: 480px;
     height: 66px;
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .title__over-one {
@@ -205,7 +209,7 @@
     line-height: 22px;
     width: 480px;
     height: 88px;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .subject__content {
@@ -216,11 +220,11 @@
 }
 
 .subject__title-two {
-    margin-top: 22px;
+    margin-top: 29px;
 }
 
 .subject__title-three {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .title__allocator {
@@ -233,7 +237,7 @@
 
 .socials {
     display: flex;
-    margin-top: 30px;
+    margin-top: 44px;
     justify-content: space-between;
 }
 
@@ -243,7 +247,7 @@
 
 .about__text {
     display: flex;
-    margin-top: 90px;
+    margin-top: 114px;
 }
 
 .design {
@@ -265,13 +269,13 @@
 }
 
 .title__about {
-    margin-top: 31px;
+    margin-top: 26px;
     margin-left: 30px;
 }
 
 .button__click {
     margin-left: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 
 .contacts {
@@ -281,15 +285,15 @@
 }
 
 .contact__text {
-    width: 483px; 
-    padding: 30px;
+    padding-top: 39px;
+    padding-left: 30px;
 }
 
 .map-widget {
     width: 483px;
     height: 196px;
-    margin-top: -96px;
-    margin-left: 620px;
+    margin-top: -82px;
+    margin-left: 632px;
 }
 
 

@@ -11,7 +11,8 @@
 
 .breadcrumbs {
     display: flex;
-    gap: 20px;
+    margin-top: -11px;
+    gap: 26px;
 }
 
 .breadcrumbs-item-home::after {
@@ -42,6 +43,11 @@
 }
 
 .information__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.information__list-two {
     display: flex;
     margin-top: 50px;
 }
@@ -91,7 +97,7 @@
     font-size: 18px;
     line-height: 25px;
     width: 380px;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .section {
@@ -105,8 +111,8 @@
     font-size: 16px;
     line-height: 20px;
     display: flex;
-    margin-left: 583px;
-    margin-top: 78px;
+    margin-left: 644px;
+    margin-top: 38px;
 }
 
 .number__link {
@@ -119,13 +125,13 @@
 
 .control {
     display: flex;
-    margin-top: -19px;
+    margin-top: -23px;
 }
 
 .arrow-left {
-    margin-left: 113px;
+    margin-left: 172px;
 }
 
 .arrow-right {
-    margin-left: 1205px;
+    margin-left: 1150px;
 }

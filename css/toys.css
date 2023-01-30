@@ -12,6 +12,7 @@
 
 .breadcrumbs {
     display: flex;
+    margin-top: -9px;
     gap: 20px;
 }
 
@@ -50,7 +51,7 @@
 .background__features {
     background: #7D97DA33;
     height: 254px;
-    margin-top: 50px;
+    margin-top: 47px;
 }
 
 .features {
@@ -99,7 +100,7 @@ margin-top: -5px;
 }
 
 .color__features {
-    margin-left: 94px;
+    margin-left: 97px;
 }
 
 .features__checkbox {
@@ -182,12 +183,12 @@ margin-top: -5px;
 }
 
 .delivery__features {
-    margin-left: 100px;
+    margin-left: 127px;
     border: none;
 }
 
 .delivery__radio {
-    margin-top: 15px;
+    margin-top: 11px;
     margin-left: 25px;
 }
 
@@ -220,7 +221,7 @@ margin-top: -5px;
 }
 
 .amount__features {
-    margin-left: 69px;
+    margin-left: 60px;
 }
 
 .numbers__button {
@@ -246,8 +247,8 @@ margin-top: -5px;
 }
 
 .apply {
-    margin-top: 35px;
-    margin-left: 60px;
+    margin-top: 36px;
+    margin-left: 71px;
 }
 
 .btn-apply {
@@ -314,8 +315,8 @@ margin-top: -5px;
     font-size: 16px;
     line-height: 20px;
     display: flex;
-    margin-left: 583px;
-    margin-top: 78px;
+    margin-left: 648px;
+    margin-top: 135px;
 }
 
 .number__link {
@@ -328,11 +329,11 @@ margin-top: -5px;
 
 .control {
     display: flex;
-    margin-top: -19px;
+    margin-top: -25px;
 }
 
 .arrow-left {
-    margin-left: 113px;
+    margin-left: 170px;
 }
 
 .arrow-right {
